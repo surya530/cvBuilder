@@ -1,8 +1,8 @@
-
+import React , { useState } from "react";
 
 let PersonalInfo = ()=>{
     return(
-        <div></div>
+        <div> Info </div>
     )
 }
 

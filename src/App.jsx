@@ -9,6 +9,10 @@ import viteLogo from '/vite.svg'
 //import './App.css'
 import Sidebar from "./components/sidebar";
 
+// catagories
+import PersonalInfo from './components/sidebar/catagories/personalInfo';
+import Summary from './components/sidebar/catagories/summary';
+import History from './components/sidebar/catagories/history';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,11 +21,12 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={ <Sidebar /> }>
-          <Route path='/info'  element={<>Hello this is surya</>} />
-          <Route path='/summary'  element={<>Summary</>} />
-          <Route path='/workhistory'  element={<>Work History</>} />
-          <Route path='/skills'  element={<>Skills</>} />
+       <Route path='/' element={ <Sidebar /> }>
+          <Route path='/' key={1}  element={<PersonalInfo />} />
+          <Route path='/info'  key={2} element={<PersonalInfo />} />
+          <Route path='/summary' key={3}  element={<Summary />} />
+          <Route path='/workhistory' key={4} element={<History />} />
+          <Route path='/skills' key={5} element={<>Skills</>} />
         </ Route>
       </Routes>
     </BrowserRouter>

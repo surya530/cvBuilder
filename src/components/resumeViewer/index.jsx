@@ -1,10 +1,10 @@
 import React , {useState} from "react";
-import Box  from "@mui/material/Box";
+import {Box , Typography  }  from "@mui/material";
 
 let ResumeViewer = ()=>{
     return(
         <>
-        <Box  sx={{ height : 520 , width : 450 , background : 'white' , borderRadius : '' ,border: '1.9px dashed grey' }} >
+        <Box sx={{  width : "35rem" , height: "80vh", background : 'white' , borderRadius : '' ,border: '1.9px dashed grey' , overflow : 'scroll' , scrollbarColor : 'red' }} >
 
         </Box>
         </>
