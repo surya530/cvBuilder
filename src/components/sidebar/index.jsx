@@ -58,7 +58,7 @@ let Sidebar = (props)=>{
                 <ListItemIcon>
                   {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                 </ListItemIcon>
-                <ListItemText onClick={()=>navigate(text.path)} primary={text.name} />
+                <ListItemText key={index} onClick={()=>navigate(text.path)} primary={text.name} />
               </ListItemButton>
             </ListItem>
           ))}
