@@ -25,6 +25,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import { Grid } from "@mui/material";
 import PropTypes from 'prop-types';
 import { Link , Outlet , useNavigate } from "react-router-dom"
 
@@ -127,10 +128,16 @@ let Sidebar = (props)=>{
         </Box>
         <Box component="main" sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}>
           <Toolbar />
-            <Container sx={{display : 'flex' , justifyContent :'space-between'}}>
-               <Outlet />
-              <ResumeViewer />
-            </Container>
+            {/* <Container sx={{display : 'flex' , justifyContent :'space-between'}}> */}
+              <Grid container spacing={3}>
+                  <Grid item  sm={5} mb={4}>
+                     <Outlet />
+                  </Grid>
+                  <Grid item  sm={6} mb={8}>
+                     <ResumeViewer />
+                  </Grid>
+              </Grid>
+            {/* </Container> */}
         </Box>
       </Box>
     );
