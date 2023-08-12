@@ -9,7 +9,7 @@ import viteLogo from '/vite.svg'
 //import './App.css'
 import Sidebar from "./components/sidebar";
 
-// catagories
+// catagorie's == > new changhes done
 import PersonalInfo from './components/sidebar/catagories/personalInfo';
 import Summary from './components/sidebar/catagories/summary';
 import History from './components/sidebar/catagories/history';
