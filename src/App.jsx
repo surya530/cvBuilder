@@ -22,11 +22,11 @@ function App() {
     <BrowserRouter>
       <Routes>
        <Route path='/' element={ <Sidebar /> }>
-          <Route path='/' key={1}  element={<PersonalInfo />} />
-          <Route path='/info'  key={2} element={<PersonalInfo />} />
-          <Route path='/summary' key={3}  element={<Summary />} />
-          <Route path='/workhistory' key={4} element={<History />} />
-          <Route path='/skills' key={5} element={<>Skills</>} />
+          <Route path='/'   element={<PersonalInfo />} />
+          <Route path='/info'  element={<PersonalInfo />} />
+          <Route path='/summary'  element={<Summary />} />
+          <Route path='/workhistory'  element={<History />} />
+          <Route path='/skills'  element={<>Skills</>} />
         </ Route>
       </Routes>
     </BrowserRouter>
