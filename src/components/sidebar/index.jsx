@@ -130,10 +130,10 @@ let Sidebar = (props)=>{
           <Toolbar />
             {/* <Container sx={{display : 'flex' , justifyContent :'space-between'}}> */}
               <Grid container spacing={3}>
-                  <Grid item  sm={5} mb={4}>
+                  <Grid item  sm={5.5} mb={4}>
                      <Outlet />
                   </Grid>
-                  <Grid item  sm={6} mb={8}>
+                  <Grid item  sm={4} mb={8}>
                      <ResumeViewer />
                   </Grid>
               </Grid>

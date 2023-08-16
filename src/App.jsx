@@ -8,17 +8,23 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 //import './App.css'
 import Sidebar from "./components/sidebar";
+import { Provider  } from "react-redux";
 
 // catagorie's == > new changhes done
 import PersonalInfo from './components/sidebar/catagories/personalInfo';
 import Summary from './components/sidebar/catagories/summary';
 import History from './components/sidebar/catagories/history';
 
+// store
+import store from "./store";
+
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <Provider store={store}>
     <BrowserRouter>
       <Routes>
        <Route path='/' element={ <Sidebar /> }>
@@ -30,6 +36,7 @@ function App() {
         </ Route>
       </Routes>
     </BrowserRouter>
+    </Provider>
     </>
   )
 }
