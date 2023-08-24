@@ -53,14 +53,18 @@ let resumeInfo = createSlice({
     name:'PRODUCTS',
     initialState : resume_state,
     reducers:{
-        test1:(state,action)=>{
-
+        info:(state,action)=>{
+            console.log(action.payload);
         },
         test2:(state,action)=>{
 
+        },
+        testiii:(state , action)=>{
+            console.log(action.payload)
         }
     }
 });
 
 let resumeReducer = resumeInfo.reducer;
+export let { info , testiii } = resumeInfo.actions;
 export default resumeReducer;
